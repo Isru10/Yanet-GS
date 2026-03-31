@@ -221,19 +221,17 @@ export default function LandingPage() {
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <Link href="/login">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white/80 hover:text-white hover:bg-white/10"
-              >
+              <Button variant="ghost" size="sm" className="text-white/80 hover:text-white hover:bg-white/10">
                 Sign In
               </Button>
             </Link>
+            <Link href="/register-doctor">
+              <Button size="sm" variant="outline" className="bg-white text-emerald-800 hover:bg-white/90 font-semibold shadow">
+                Join as Doctor
+              </Button>
+            </Link>
             <Link href="/register">
-              <Button
-                size="sm"
-                className="bg-white text-emerald-800 hover:bg-white/90 font-semibold shadow"
-              >
+              <Button size="sm" className="bg-white text-emerald-800 hover:bg-white/90 font-semibold shadow">
                 Get Started
               </Button>
             </Link>
@@ -271,20 +269,18 @@ export default function LandingPage() {
                 ))}
                 <div className="pt-2 flex flex-col gap-2 border-t border-white/10">
                   <Link href="/login" onClick={() => setMenuOpen(false)}>
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="w-full border-white/30 text-white hover:bg-white/10"
-                    >
+                    <Button variant="outline" size="sm" className="w-full border-white/30 text-white hover:bg-white/10">
                       Sign In
                     </Button>
                   </Link>
+                  <Link href="/register-doctor" onClick={() => setMenuOpen(false)}>
+                    <Button variant="outline" size="sm" className="w-full border-white/30 text-white hover:bg-white/10">
+                      🩺 Register as Doctor
+                    </Button>
+                  </Link>
                   <Link href="/register" onClick={() => setMenuOpen(false)}>
-                    <Button
-                      size="sm"
-                      className="w-full bg-white text-emerald-800 hover:bg-white/90 font-semibold"
-                    >
-                      Get Started
+                    <Button size="sm" className="w-full bg-white text-emerald-800 hover:bg-white/90 font-semibold">
+                      Get Started as Patient
                     </Button>
                   </Link>
                 </div>
@@ -333,24 +329,16 @@ export default function LandingPage() {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link href="/register">
-                <Button
-                  size="lg"
-                  className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-8 shadow-xl"
-                >
+                <Button size="lg" className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-8 shadow-xl">
                   Book an Appointment
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <a href="#services">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-8 shadow-xl"
-                >
-                  Learn More
-                  <ChevronDown className="ml-2 w-5 h-5" />
+              <Link href="/register-doctor">
+                <Button size="lg" variant="outline" className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-8 shadow-xl">
+                  🩺 Register as Doctor
                 </Button>
-              </a>
+              </Link>
             </div>
 
             {/* Trust badges */}
@@ -714,20 +702,18 @@ export default function LandingPage() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/register">
-                <Button
-                  size="lg"
-                  className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-10 shadow-xl"
-                >
+                <Button size="lg" className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-10 shadow-xl">
                   Register as Patient
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
+              <Link href="/register-doctor">
+                <Button size="lg" variant="outline" className="bg-white text-emerald-800 hover:bg-white/90 font-bold text-base px-10 shadow-xl">
+                  🩺 Join as a Doctor
+                </Button>
+              </Link>
               <Link href="/login">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white/30 text-white hover:bg-white/10 font-semibold text-base px-10"
-                >
+                <Button size="lg" variant="ghost" className="text-white/80 hover:text-white hover:bg-white/10 font-semibold text-base px-10">
                   Sign In
                 </Button>
               </Link>
