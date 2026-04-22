@@ -1,1 +1,10 @@
-{ "name": "yanet-hs", "private": true, "workspaces": ["apps/*", "packages/*"] }
+{
+  "name": "yanet-hs",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web"
+  }
+}

@@ -19,7 +19,12 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/components/ui/*": ["../../packages/ui/*"],
+      "@/lib/utils": ["../../packages/lib/utils"],
+      "@/lib/*": ["../../packages/lib/*"],
+      "@/utils/supabase/client": ["../../packages/database/utils/supabase/client"],
+      "@/utils/supabase/server": ["../../packages/database/utils/supabase/server"]
     }
   },
   "include": [
